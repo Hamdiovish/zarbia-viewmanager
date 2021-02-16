@@ -6,7 +6,11 @@ The animation is using a grayscaled images, see "mask" folder, so in order to ge
 Regarding usage:
 1° Add ViewManager.tscn as autoload
 2° Call it using one single line:
+ViewManager.modal_show(your_scene_instance,effect,cutoff)
+Ex: ViewManager.modal_show(your_scene_instance,ViewManager.EFFECT.light,1.0)
+or simply use the default params:
 ViewManager.modal_show(your_scene_instance)
+
 3° Dismiss the shown scene with another line:
 ViewManager.modal_dismiss()
 
